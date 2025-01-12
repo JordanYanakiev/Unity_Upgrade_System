@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpgradesSO : MonoBehaviour
+[CreateAssetMenu]
+public class UpgradesSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<Upgrade> woodUpgrades;
+    public List<Upgrade> goldUpgrades;
+    public List<Upgrade> copperUpgrades;
 }

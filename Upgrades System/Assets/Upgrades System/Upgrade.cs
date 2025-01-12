@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Upgrade : MonoBehaviour
+[System.Serializable]
+public class Upgrade
 {
-    public enum IngameResources
-    {
-
-    }
-
+    public string upgradeName;
     public float bonusPercent;
-    public List<IngameResources> resourceRequirements;
-
+    public List<InGameResourceType> resourceRequirements;
+    public List<float> resourceQuantityRequirements;
+    public float upgradeTime;
 }

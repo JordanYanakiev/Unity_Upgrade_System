@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8410b01160edff488198a328d3b4b12, type: 3}
+  m_Name: Upgrades
+  m_EditorClassIdentifier: 
+  woodUpgrades:
+  - upgradeName: Wood 1
+    bonusPercent: 1
+    resourceRequirements: 01000000
+    resourceQuantityRequirements:
+    - 0
+    upgradeTime: 10
+  - upgradeName: Wood 2
+    bonusPercent: 1
+    resourceRequirements: 01000000
+    resourceQuantityRequirements: []
+    upgradeTime: 20
+  - upgradeName: wood 3
+    bonusPercent: 1
+    resourceRequirements: 01000000
+    resourceQuantityRequirements:
+    - 50
+    upgradeTime: 10
+  goldUpgrades:
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
+  copperUpgrades:
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
+  - upgradeName: 
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 0
