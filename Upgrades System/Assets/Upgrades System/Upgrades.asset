@@ -18,24 +18,27 @@ MonoBehaviour:
     resourceRequirements: 01000000
     resourceQuantityRequirements:
     - 0
-    upgradeTime: 10
+    upgradeTime: 968
   - upgradeName: Wood 2
     bonusPercent: 1
-    resourceRequirements: 01000000
-    resourceQuantityRequirements: []
+    resourceRequirements: 0100000002000000
+    resourceQuantityRequirements:
+    - 5
+    - 5
     upgradeTime: 20
-  - upgradeName: wood 3
+  - upgradeName: Wood 3
     bonusPercent: 1
     resourceRequirements: 01000000
     resourceQuantityRequirements:
     - 50
     upgradeTime: 10
   goldUpgrades:
-  - upgradeName: 
-    bonusPercent: 0
-    resourceRequirements: 
-    resourceQuantityRequirements: []
-    upgradeTime: 0
+  - upgradeName: Gold 1
+    bonusPercent: 1
+    resourceRequirements: 02000000
+    resourceQuantityRequirements:
+    - 2
+    upgradeTime: 472
   - upgradeName: 
     bonusPercent: 0
     resourceRequirements: 

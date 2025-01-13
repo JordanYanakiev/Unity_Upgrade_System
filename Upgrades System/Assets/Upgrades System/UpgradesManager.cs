@@ -9,12 +9,12 @@ public class UpgradesManager : MonoBehaviour
     [SerializeField] public Button goToOtherSceneButton;
 
     [SerializeField] private List<GameObject> upgradesManagerInstances;
-    public UpgradesSO upgradesSo;
+    [SerializeField] public UpgradesSO upgradesSo;
 
 
 
-    private UpgradesManager _instance;
-    public UpgradesManager instance
+    private static UpgradesManager _instance;
+    public static UpgradesManager instance
     {
         get
         {
