@@ -13,54 +13,72 @@ MonoBehaviour:
   m_Name: Upgrades
   m_EditorClassIdentifier: 
   woodUpgrades:
-  - upgradeName: Wood 1
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 1
+    upgradeName: Wood 1
     bonusPercent: 1
     resourceRequirements: 01000000
     resourceQuantityRequirements:
     - 0
-    upgradeTime: 968
-  - upgradeName: Wood 2
+    upgradeTime: 8952
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 1
+    upgradeName: Wood 2
     bonusPercent: 1
     resourceRequirements: 0100000002000000
     resourceQuantityRequirements:
     - 5
     - 5
     upgradeTime: 20
-  - upgradeName: Wood 3
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 1
+    upgradeName: Wood 3
     bonusPercent: 1
     resourceRequirements: 01000000
     resourceQuantityRequirements:
     - 50
     upgradeTime: 10
   goldUpgrades:
-  - upgradeName: Gold 1
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Gold 1
     bonusPercent: 1
     resourceRequirements: 02000000
     resourceQuantityRequirements:
     - 2
     upgradeTime: 472
-  - upgradeName: 
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: 
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
     upgradeTime: 0
-  - upgradeName: 
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: 
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
     upgradeTime: 0
   copperUpgrades:
-  - upgradeName: 
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: 
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
     upgradeTime: 0
-  - upgradeName: 
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: 
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
     upgradeTime: 0
-  - upgradeName: 
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: 
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []

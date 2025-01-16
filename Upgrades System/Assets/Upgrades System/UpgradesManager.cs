@@ -7,11 +7,10 @@ using UnityEngine.UI;
 public class UpgradesManager : MonoBehaviour
 {
     [SerializeField] public Button goToOtherSceneButton;
-
     [SerializeField] private List<GameObject> upgradesManagerInstances;
     [SerializeField] public UpgradesSO upgradesSo;
 
-
+    private static bool isSubscribed = false;
 
     private static UpgradesManager _instance;
     public static UpgradesManager instance
@@ -29,36 +28,37 @@ public class UpgradesManager : MonoBehaviour
 
     void Awake()
     {
-       
-        //DontDestroyOnLoad(this.gameObject);
-
-        //if (instance == null)
-        //{
-        //    instance = this;
-        //    DontDestroyOnLoad(gameObject);
-        //}
-        //else if (instance != this)
-        //{
-        //    Destroy(gameObject);
-        //}
-
+        SaveAndLoadResearches.instance.LoadUpgradeStates();
+        if (!isSubscribed)
+        {
+            SceneManager.sceneUnloaded += OnSceneUnloaded;
+            isSubscribed = true;
+            //Debug.Log("Subscribed to SceneUnloaded event");
+        }
     }
 
     private void OnEnable()
     {
-            goToOtherSceneButton = GameObject.Find("OtherSceneButton").GetComponent<Button>();
-            goToOtherSceneButton.onClick.AddListener(GoToOtherScene);
-        
+        goToOtherSceneButton = GameObject.Find("OtherSceneButton").GetComponent<Button>();
+        goToOtherSceneButton.onClick.AddListener(GoToOtherScene);
     }
-
 
     private void GoToOtherScene()
     {
+        SaveAndLoadResearches.instance.SaveUpgradeStates();
         SceneManager.LoadScene("OtherScene");
     }
 
-    private void Update()
+    private void OnSceneUnloaded(Scene current)
     {
-        
+        StopAllCoroutines();
+        //SaveAndLoadResearches.instance.SaveUpgradeStates();
+        //Debug.Log("OnSceneUnloaded: " + current);
+    }
+    void OnDestroy()
+    {
+        // Static persists, so no need to unsubscribe unless shutting down the game.
+        //SceneManager.sceneUnloaded -= OnSceneUnloaded;
+        //Debug.Log("Unsubscribed from SceneUnloaded event");
     }
 }

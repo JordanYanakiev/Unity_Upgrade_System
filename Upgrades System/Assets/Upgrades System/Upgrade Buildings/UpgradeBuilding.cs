@@ -81,6 +81,8 @@ public class UpgradeBuilding : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
+        upgradeList[levelIndex].isAlreadyResearched = true;
+        upgradeList[levelIndex].isCurrentlyResearching = false;
     }
 
 
