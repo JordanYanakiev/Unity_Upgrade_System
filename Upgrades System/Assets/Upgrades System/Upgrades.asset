@@ -20,7 +20,7 @@ MonoBehaviour:
     resourceRequirements: 01000000
     resourceQuantityRequirements:
     - 0
-    upgradeTime: 8952
+    upgradeTime: 8942
   - isCurrentlyResearching: 0
     isAlreadyResearched: 1
     upgradeName: Wood 2
