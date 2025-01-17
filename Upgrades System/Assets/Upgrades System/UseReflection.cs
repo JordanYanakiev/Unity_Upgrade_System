@@ -12,7 +12,7 @@ public class UseReflection : MonoBehaviour
     {
         // Get all lists of Upgrade and log upgrade names
         List<IList> allLists = GetAllUpgradeLists(upgradesSO);
-        LogUpgradeNames(allLists);
+        //LogUpgradeNames(allLists);
     }
 
     List<IList> GetAllUpgradeLists(UpgradesSO scriptableObject)
@@ -35,6 +35,7 @@ public class UseReflection : MonoBehaviour
                     if (value is IList list)
                     {
                         lists.Add(list);
+                        Debug.Log($"Upgrade Name: {field.Name}");
                     }
                 }
             }
@@ -43,17 +44,13 @@ public class UseReflection : MonoBehaviour
         return lists;
     }
 
-    void LogUpgradeNames(List<IList> allLists)
-    {
-        foreach (var list in allLists)
-        {
-            foreach (var item in list)
-            {
-                if (item is Upgrade upgrade)
-                {
-                    Debug.Log($"Upgrade Name: {upgrade.upgradeName}");
-                }
-            }
-        }
-    }
+    //void LogUpgradeNames(List<IList> allLists)
+    //{
+    //    foreach (var list in allLists)
+    //    {
+            
+    //        Debug.Log($"Upgrade Name: {list.GetType().BaseType}");
+                
+    //    }
+    //}
 }
