@@ -14,7 +14,7 @@ using UnityEngine;
 
 public class SaveAndLoadResearches : MonoBehaviour
 {
-
+    
     #region SINGLETON
     public static SaveAndLoadResearches _instance;
 
@@ -94,13 +94,22 @@ public class SaveAndLoadResearches : MonoBehaviour
         }
         else if (!File.Exists(fileLocation))
         {
-            saveData.woodUpgradesSaveData = new List<Upgrade>();
+            var allListsFromSO = UseReflection.GetAllLists(UpgradesManager.instance.upgradesSo);
+            var allListsFromSaveDataUpgradesStates = UseReflection.GetAllLists(saveData);
 
-            for(int i = 0; i < UpgradesManager.instance.upgradesSo.woodUpgrades.Count; i++)
+            for (int i = 0; i < allListsFromSO.Count; i++)
             {
-                saveData.woodUpgradesSaveData.Add(UpgradesManager.instance.upgradesSo.woodUpgrades[i]);
+                Debug.Log("Stop Here!");
             }
 
+            //========== THIS IS WORKING STUFF SO DON'T DELETE IT IN CASE YOU NEED IT======
+            //saveData.woodUpgradesSaveData = new List<Upgrade>();
+
+            //for(int i = 0; i < UpgradesManager.instance.upgradesSo.woodUpgrades.Count; i++)
+            //{
+            //    saveData.woodUpgradesSaveData.Add(UpgradesManager.instance.upgradesSo.woodUpgrades[i]);
+            //}
+            //=============================================================
             BinaryFormatter bf = new BinaryFormatter();
             FileStream stream = new FileStream(fileLocation, FileMode.Create);
             bf.Serialize(stream, saveData);
