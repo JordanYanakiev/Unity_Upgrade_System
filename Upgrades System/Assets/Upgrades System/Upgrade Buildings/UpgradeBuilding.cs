@@ -72,13 +72,14 @@ public class UpgradeBuilding : MonoBehaviour
     private IEnumerator ResearchCountdown(List<Upgrade> upgradeList, int levelIndex)
     {
         yield return new WaitForSeconds(1f);
-
+        SaveAndLoadResearches.instance.SaveUpgradeStates();
 
 
         while (upgradeList[levelIndex].upgradeTime > 0)
         {
             upgradeList[levelIndex].upgradeTime -= 1f;
 
+            SaveAndLoadResearches.instance.SaveUpgradeStates();
             yield return new WaitForSeconds(1f);
         }
         upgradeList[levelIndex].isAlreadyResearched = true;

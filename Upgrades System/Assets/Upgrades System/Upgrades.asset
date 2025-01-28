@@ -14,72 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodUpgrades:
   - isCurrentlyResearching: 0
-    isAlreadyResearched: 1
-    upgradeName: Wood 1
-    bonusPercent: 1
-    resourceRequirements: 01000000
-    resourceQuantityRequirements:
-    - 0
-    upgradeTime: 8942
-  - isCurrentlyResearching: 0
-    isAlreadyResearched: 1
-    upgradeName: Wood 2
-    bonusPercent: 1
-    resourceRequirements: 0100000002000000
-    resourceQuantityRequirements:
-    - 5
-    - 5
-    upgradeTime: 20
-  - isCurrentlyResearching: 0
-    isAlreadyResearched: 1
-    upgradeName: Wood 3
-    bonusPercent: 1
-    resourceRequirements: 01000000
-    resourceQuantityRequirements:
-    - 50
-    upgradeTime: 10
-  goldUpgrades:
-  - isCurrentlyResearching: 0
     isAlreadyResearched: 0
-    upgradeName: Gold 1
-    bonusPercent: 1
-    resourceRequirements: 02000000
-    resourceQuantityRequirements:
-    - 2
-    upgradeTime: 472
-  - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
-    upgradeName: 
+    upgradeName: wood 0
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 0
+    upgradeTime: 480
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
-    upgradeName: 
+    upgradeName: wood 1
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 0
-  copperUpgrades:
+    upgradeTime: 500
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
-    upgradeName: 
+    upgradeName: wood 2
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 0
-  - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
-    upgradeName: 
-    bonusPercent: 0
-    resourceRequirements: 
-    resourceQuantityRequirements: []
-    upgradeTime: 0
-  - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
-    upgradeName: 
-    bonusPercent: 0
-    resourceRequirements: 
-    resourceQuantityRequirements: []
-    upgradeTime: 0
+    upgradeTime: 500
+  goldUpgrades: []
+  copperUpgrades: []
