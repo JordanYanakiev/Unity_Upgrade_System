@@ -19,7 +19,7 @@ MonoBehaviour:
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 480
+    upgradeTime: 475
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
     upgradeName: wood 1
@@ -34,5 +34,47 @@ MonoBehaviour:
     resourceRequirements: 
     resourceQuantityRequirements: []
     upgradeTime: 500
-  goldUpgrades: []
-  copperUpgrades: []
+  goldUpgrades:
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Gold 0
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 462
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Gold 1
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 500
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Gold 2
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 500
+  copperUpgrades:
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Copper 0
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 500
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Copper 1
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 500
+  - isCurrentlyResearching: 0
+    isAlreadyResearched: 0
+    upgradeName: Copper 2
+    bonusPercent: 0
+    resourceRequirements: 
+    resourceQuantityRequirements: []
+    upgradeTime: 500
