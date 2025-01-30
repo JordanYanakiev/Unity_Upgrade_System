@@ -14,47 +14,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodUpgrades:
   - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
+    isAlreadyResearched: 1
     upgradeName: wood 0
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 475
+    startUpgradeTime: 50
+    upgradeTime: 0
   - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
+    isAlreadyResearched: 1
     upgradeName: wood 1
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 500
+    startUpgradeTime: 500
+    upgradeTime: 0
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
     upgradeName: wood 2
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
+    startUpgradeTime: 500
     upgradeTime: 500
   goldUpgrades:
   - isCurrentlyResearching: 0
-    isAlreadyResearched: 0
+    isAlreadyResearched: 1
     upgradeName: Gold 0
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 462
+    startUpgradeTime: 500
+    upgradeTime: 0
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
     upgradeName: Gold 1
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
-    upgradeTime: 500
+    startUpgradeTime: 500
+    upgradeTime: 479
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
     upgradeName: Gold 2
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
+    startUpgradeTime: 500
     upgradeTime: 500
   copperUpgrades:
   - isCurrentlyResearching: 0
@@ -63,6 +69,7 @@ MonoBehaviour:
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
+    startUpgradeTime: 500
     upgradeTime: 500
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
@@ -70,6 +77,7 @@ MonoBehaviour:
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
+    startUpgradeTime: 500
     upgradeTime: 500
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
@@ -77,4 +85,5 @@ MonoBehaviour:
     bonusPercent: 0
     resourceRequirements: 
     resourceQuantityRequirements: []
+    startUpgradeTime: 500
     upgradeTime: 500

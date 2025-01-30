@@ -11,5 +11,6 @@ public class Upgrade
     public float bonusPercent;
     public List<InGameResourceType> resourceRequirements;
     public List<float> resourceQuantityRequirements;
+    public float startUpgradeTime;
     public float upgradeTime;
 }

@@ -48,6 +48,7 @@ public class SaveAndLoadResearches : MonoBehaviour
         saveData = new SaveDataUpgradesStates();
         DontDestroyOnLoad(this.gameObject);
         LoadUpgradeStates();
+        UpgradeBuilding.instance.ContinueUpgrades();
     }
 
     public void SaveUpgradeStates()

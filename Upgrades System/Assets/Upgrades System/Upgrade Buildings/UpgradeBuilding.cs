@@ -20,7 +20,34 @@ public class UpgradeBuilding : MonoBehaviour
     // upgradesLevels[2] => Copper
 
 
+    #region SINGLETON
+    public static UpgradeBuilding _instance;
 
+    public static UpgradeBuilding instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType(typeof(UpgradeBuilding)) as UpgradeBuilding;
+            }
+
+            return _instance;
+        }
+        set
+        {
+            _instance = value;
+        }
+    }
+    #endregion
+
+
+
+
+    private void Awake()
+    {
+        ContinueUpgrades();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +55,28 @@ public class UpgradeBuilding : MonoBehaviour
         woodUpgradeButton.onClick.AddListener(() => DoUpgrade(woodUpgradeButton));
         goldUpgradeButton.onClick.AddListener(() => DoUpgrade(goldUpgradeButton));
         copperUpgradeButton.onClick.AddListener(() => DoUpgrade(copperUpgradeButton));
+
     }
+
+
+    public void ContinueUpgrades()
+    {
+        var soLists = UseReflection.GetAllLists(UpgradesManager.instance.upgradesSo);
+
+        for (int i = 0; i < soLists.Count; i++)
+        {
+            var upgradeList = soLists[i] as List<Upgrade>;
+
+            foreach(Upgrade temp in upgradeList)
+            {
+                if(temp.upgradeTime < temp.startUpgradeTime && !temp.isAlreadyResearched)
+                {
+                    StartCoroutine(ResearchCountdown(temp));
+                }
+            }
+        }
+    }
+
 
 
     private void DoUpgrade (Button upgradeButton)
@@ -123,6 +171,15 @@ public class UpgradeBuilding : MonoBehaviour
             SaveAndLoadResearches.instance.SaveUpgradeStates();
             yield return new WaitForSeconds(1f);
         }
+
+        if(upgradeList[levelIndex].upgradeTime <= 0)
+        {
+            upgradeList[levelIndex].upgradeTime = 0;
+            upgradeList[levelIndex].isAlreadyResearched = true;
+            SaveAndLoadResearches.instance.SaveUpgradeStates();
+            StopCoroutine(ResearchCountdown(upgradeList, levelIndex));
+        }
+
         upgradeList[levelIndex].isAlreadyResearched = true;
         upgradeList[levelIndex].isCurrentlyResearching = false;
     }

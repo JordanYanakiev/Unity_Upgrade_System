@@ -1197,6 +1197,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1204,6 +1205,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1211,6 +1213,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     goldUpgradesSaveData:
     - isCurrentlyResearching: 0
@@ -1219,6 +1222,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1226,6 +1230,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1233,6 +1238,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 500
       upgradeTime: 500
     stoneUpgradesSaveData:
     - isCurrentlyResearching: 0
@@ -1241,6 +1247,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 200
       upgradeTime: 200
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1248,6 +1255,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 200
       upgradeTime: 200
     - isCurrentlyResearching: 0
       isAlreadyResearched: 0
@@ -1255,6 +1263,7 @@ MonoBehaviour:
       bonusPercent: 0
       resourceRequirements: 
       resourceQuantityRequirements: []
+      startUpgradeTime: 200
       upgradeTime: 200
 --- !u!4 &1750408284
 Transform:
