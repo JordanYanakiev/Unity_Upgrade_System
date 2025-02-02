@@ -17,17 +17,20 @@ MonoBehaviour:
     isAlreadyResearched: 1
     upgradeName: wood 0
     bonusPercent: 0
-    resourceRequirements: 
-    resourceQuantityRequirements: []
+    resourceRequirements: 01000000
+    resourceQuantityRequirements:
+    - 5
     startUpgradeTime: 50
     upgradeTime: 0
   - isCurrentlyResearching: 0
     isAlreadyResearched: 1
     upgradeName: wood 1
     bonusPercent: 0
-    resourceRequirements: 
-    resourceQuantityRequirements: []
-    startUpgradeTime: 500
+    resourceRequirements: 0100000003000000
+    resourceQuantityRequirements:
+    - 15
+    - 2500
+    startUpgradeTime: 50
     upgradeTime: 0
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
@@ -53,7 +56,7 @@ MonoBehaviour:
     resourceRequirements: 
     resourceQuantityRequirements: []
     startUpgradeTime: 500
-    upgradeTime: 479
+    upgradeTime: 79
   - isCurrentlyResearching: 0
     isAlreadyResearched: 0
     upgradeName: Gold 2

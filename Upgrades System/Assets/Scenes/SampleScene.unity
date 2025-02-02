@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327832863}
   - component: {fileID: 327832864}
+  - component: {fileID: 327832865}
   m_Layer: 0
   m_Name: UpgradesManager
   m_TagString: Untagged
@@ -169,6 +170,18 @@ MonoBehaviour:
   goToOtherSceneButton: {fileID: 0}
   upgradesManagerInstances: []
   upgradesSo: {fileID: 11400000, guid: 5b8d700abe3c5784c8837f287dd8ea62, type: 2}
+--- !u!114 &327832865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327832862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c72a96e81a5e1e4a83d5368656de22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438741249
 GameObject:
   m_ObjectHideFlags: 0

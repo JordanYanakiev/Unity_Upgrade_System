@@ -77,6 +77,44 @@ public class UpgradeBuilding : MonoBehaviour
         }
     }
 
+    private bool CheckIfHaveResourcesForUpgrade(Upgrade upgrade)
+    {
+        bool isHavingResources = false;
+        int counter = 0;
+
+        // Check in ResourceManager if the needed resources are available
+        foreach (var resource in upgrade.resourceRequirements)
+        {
+            // Check if ResourceManager contains the required resource
+            if (ResourceManager.instance.availableResources.ContainsKey(resource))
+            {
+                float availableResource = ResourceManager.instance.availableResources[resource];
+
+                //If the resource is available and the amount is biger than needed set the bool as true
+                if (availableResource >= upgrade.resourceQuantityRequirements[counter])
+                {
+                    isHavingResources = true;
+                }
+                //If the resource is available and the amount is less than needed set the bool as false and return
+                else if (availableResource < upgrade.resourceQuantityRequirements[counter])
+                {
+                    isHavingResources = false;
+                    Debug.Log($"Not enough {resource}");
+                    break;
+                }
+            }
+            else if (!ResourceManager.instance.availableResources.ContainsKey(resource))
+            {
+                isHavingResources = false;
+                Debug.Log($"No such resource {resource}!");
+                break;
+            }
+
+            counter++;
+        }
+
+        return isHavingResources;
+    }
 
 
     private void DoUpgrade (Button upgradeButton)
@@ -97,18 +135,16 @@ public class UpgradeBuilding : MonoBehaviour
             // Find the next available upgrade (not researched yet)
             Upgrade nextUpgrade = upgradeList.FirstOrDefault(u => !u.isAlreadyResearched);
 
-            resourceType = InGameResourceType.wood;
-            UpgradeUpgrade(resourceType, nextUpgrade, upgradeLevel);
+            //Check if the player have resources to initiate the upgrade
+            bool isHavingResourcesForUpgrade = CheckIfHaveResourcesForUpgrade(nextUpgrade);
 
-            Debug.Log("All upgrades in this category have been researched.");
-            //if (nextUpgrade != null)
-            //{
-            //    //UpgradeUpgrade(nextUpgrade);
-            //}
-            //else
-            //{
-            //    Debug.Log("All upgrades in this category have been researched.");
-            //}
+            if (isHavingResourcesForUpgrade)
+            {
+                resourceType = InGameResourceType.wood;
+                UpgradeUpgrade(resourceType, nextUpgrade, upgradeLevel);
+
+                Debug.Log("All upgrades in this category have been researched.");
+            }
         }
         else
         {
