@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af58835dd5a3f0f4282cb41bd28f6bbf, type: 3}
+  m_Name: TechTreeSO
+  m_EditorClassIdentifier: 
+  isInitializedOnce: 1
+  skillsList:
+  - resourceType: 0
+    id: 0
+    technologyName: Ability01
+    technologyBonusType: 
+    technologyLevel: 1
+    connectedSkills: 010000000200000003000000
+    bonusPercent: 1
+    isDiscovered: 0
+  - resourceType: 0
+    id: 1
+    technologyName: Ability02
+    technologyBonusType: 
+    technologyLevel: 0
+    connectedSkills: 
+    bonusPercent: 0
+    isDiscovered: 0
+  - resourceType: 0
+    id: 2
+    technologyName: Ability03
+    technologyBonusType: 
+    technologyLevel: 5
+    connectedSkills: 0400000005000000
+    bonusPercent: 5
+    isDiscovered: 0
+  - resourceType: 0
+    id: 3
+    technologyName: Ability04
+    technologyBonusType: 
+    technologyLevel: 0
+    connectedSkills: 
+    bonusPercent: 0
+    isDiscovered: 0
+  - resourceType: 0
+    id: 4
+    technologyName: Ability05
+    technologyBonusType: 
+    technologyLevel: 0
+    connectedSkills: 
+    bonusPercent: 0
+    isDiscovered: 0
+  - resourceType: 0
+    id: 5
+    technologyName: Ability06
+    technologyBonusType: 
+    technologyLevel: 0
+    connectedSkills: 
+    bonusPercent: 0
+    isDiscovered: 0
