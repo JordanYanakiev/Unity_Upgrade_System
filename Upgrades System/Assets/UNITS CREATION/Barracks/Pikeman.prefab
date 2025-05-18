@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Pikeman
+  unitDescription: This is Pikeman. Pikeman pokes people with a pike. Don't be like
+    pikeman.
   damage: 2
   deffense: 2
   unitBuildTime: 3

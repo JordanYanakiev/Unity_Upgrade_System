@@ -7,12 +7,12 @@ public class MilitiaFactory : Factory
     public override void AddSoldiersToQueue(ISoldier soldier)
     {
         ISoldier soldierToBuild = this.GetSoldier(this.soldierGameObject);
-        BarracksFactory.barracksFactory.AddSoldiersToQueue(soldierToBuild, int.Parse(numberOfUnitsToTrain.text));
+        BarracksFactory.barracksFactory.AddSoldiersToQueue(soldierToBuild.UnitName, int.Parse(numberOfUnitsToTrain.text));
     }
     public void AddSoldiersToQueue()
     {
     ISoldier soldierToBuild = this.GetSoldier(this.soldierGameObject);
-    BarracksFactory.barracksFactory.AddSoldiersToQueue(soldierToBuild, int.Parse(numberOfUnitsToTrain.text));
+    BarracksFactory.barracksFactory.AddSoldiersToQueue(soldierToBuild.UnitName, int.Parse(numberOfUnitsToTrain.text));
     }
 
     public override ISoldier GetSoldier(GameObject soldierGameObject)
